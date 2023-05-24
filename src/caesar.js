@@ -12,7 +12,7 @@ const caesarModule = (function () {
     for (const char of lowerCasedInput) {
       if (alphabet.includes(char)) {
         const index = alphabet.indexOf(char);
-        let newIndex = encode ? (index + shift +26) % 26 : (index - shift + 26) % 26;
+        let newIndex = encode ? (index + shift + 26) % 26 : (index - shift + 26) % 26;
         const encryptedChar = alphabet[newIndex];
         result += encryptedChar;
       } else {
