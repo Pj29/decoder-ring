@@ -3,7 +3,7 @@ const caesarModule = (function () {
 
   function caesar(input, shift, encode = true) {
     // If the shift value isn't present,
-    // equal to 0, less than -25, or greater than 25, the function should return false
+    // equal to 0, less than -25, or greater than 25, the function should return falsy value
     if (!shift || shift > 25 || shift < -25 || shift === 0) {
       return false;
     }
